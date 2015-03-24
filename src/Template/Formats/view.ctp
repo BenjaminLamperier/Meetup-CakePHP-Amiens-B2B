@@ -13,8 +13,8 @@
     <h2><?= h($format->id) ?></h2>
     <div class="row">
         <div class="large-5 columns strings">
-            <h6 class="subheader"><?= __('Names') ?></h6>
-            <p><?= h($format->names) ?></p>
+            <h6 class="subheader"><?= __('Name') ?></h6>
+            <p><?= h($format->name) ?></p>
         </div>
         <div class="large-2 columns numbers end">
             <h6 class="subheader"><?= __('Id') ?></h6>

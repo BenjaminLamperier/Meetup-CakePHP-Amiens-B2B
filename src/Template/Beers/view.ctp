@@ -17,8 +17,8 @@
         <div class="large-5 columns strings">
             <h6 class="subheader"><?= __('Name') ?></h6>
             <p><?= h($beer->name) ?></p>
-            <h6 class="subheader"><?= __('Image Url') ?></h6>
-            <p><?= h($beer->image_url) ?></p>
+            <h6 class="subheader"><?= __('Image') ?></h6>
+            <p><?= h($beer->image) ?></p>
             <h6 class="subheader"><?= __('Type') ?></h6>
             <p><?= $beer->has('type') ? $this->Html->link($beer->type->name, ['controller' => 'Types', 'action' => 'view', $beer->type->id]) : '' ?></p>
             <h6 class="subheader"><?= __('Format') ?></h6>

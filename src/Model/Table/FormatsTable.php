@@ -22,7 +22,7 @@ class FormatsTable extends Table
     public function initialize(array $config)
     {
         $this->table('formats');
-        $this->displayField('id');
+        $this->displayField('name');
         $this->primaryKey('id');
         $this->hasMany('Beers', [
             'foreignKey' => 'format_id'
@@ -40,8 +40,8 @@ class FormatsTable extends Table
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create')
-            ->requirePresence('names', 'create')
-            ->notEmpty('names');
+            ->requirePresence('name', 'create')
+            ->notEmpty('name');
 
         return $validator;
     }

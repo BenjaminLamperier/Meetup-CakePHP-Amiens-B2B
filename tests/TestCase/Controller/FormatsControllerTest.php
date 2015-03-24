@@ -17,7 +17,8 @@ class FormatsControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'Formats' => 'app.formats',
-        'Beers' => 'app.beers'
+        'Beers' => 'app.beers',
+        'Types' => 'app.types'
     ];
 
     /**

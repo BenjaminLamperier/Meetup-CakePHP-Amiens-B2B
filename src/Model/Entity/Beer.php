@@ -16,7 +16,7 @@ class Beer extends Entity
      */
     protected $_accessible = [
         'name' => true,
-        'image_url' => true,
+        'image' => true,
         'qte' => true,
         'type_id' => true,
         'format_id' => true,

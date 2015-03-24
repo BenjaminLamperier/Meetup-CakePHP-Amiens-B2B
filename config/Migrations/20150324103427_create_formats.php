@@ -13,7 +13,7 @@ class CreateFormats extends AbstractMigration
     public function change()
     {
         $table = $this->table('formats');
-        $table->addColumn('names', 'string', [
+        $table->addColumn('name', 'string', [
             'default' => null,
             'limit' => 255,
             'null' => false,

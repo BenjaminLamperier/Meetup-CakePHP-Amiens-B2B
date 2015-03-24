@@ -1,7 +1,7 @@
 <div class="actions columns large-2 medium-3">
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Beer'), ['action' => 'add']) ?></li>
+        <li><strong><?= $this->Html->link(__('New Beer'), ['action' => 'add']) ?></strong></li>
         <li><?= $this->Html->link(__('List Types'), ['controller' => 'Types', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Type'), ['controller' => 'Types', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Formats'), ['controller' => 'Formats', 'action' => 'index']) ?> </li>
@@ -12,27 +12,25 @@
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('name') ?></th>
-            <th><?= $this->Paginator->sort('image_url') ?></th>
+            <th><?= $this->Paginator->sort('image') ?></th>
             <th><?= $this->Paginator->sort('qte') ?></th>
-            <th><?= $this->Paginator->sort('created') ?></th>
-            <th><?= $this->Paginator->sort('modified') ?></th>
             <th><?= $this->Paginator->sort('type_id') ?></th>
+            <th><?= $this->Paginator->sort('format_id') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
     </thead>
     <tbody>
     <?php foreach ($beers as $beer): ?>
         <tr>
-            <td><?= $this->Number->format($beer->id) ?></td>
-            <td><?= h($beer->name) ?></td>
-            <td><?= h($beer->image_url) ?></td>
+            <td><strong><?= h($beer->name) ?></strong></td>
+            <td><img src="<?= $beer->image ?>"></td>
             <td><?= $this->Number->format($beer->qte) ?></td>
-            <td><?= h($beer->created) ?></td>
-            <td><?= h($beer->modified) ?></td>
             <td>
                 <?= $beer->has('type') ? $this->Html->link($beer->type->name, ['controller' => 'Types', 'action' => 'view', $beer->type->id]) : '' ?>
+            </td>            
+            <td>
+                <?= $beer->has('format') ? $this->Html->link($beer->format->name, ['controller' => 'Format', 'action' => 'view', $beer->format->id]) : '' ?>
             </td>
             <td class="actions">
                 <?= $this->Html->link(__('View'), ['action' => 'view', $beer->id]) ?>

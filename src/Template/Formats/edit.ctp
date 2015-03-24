@@ -17,7 +17,7 @@
     <fieldset>
         <legend><?= __('Edit Format') ?></legend>
         <?php
-            echo $this->Form->input('names');
+            echo $this->Form->input('name');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -45,8 +45,8 @@ class BeersFixture extends TestFixture
             'name' => 'Lorem ipsum dolor sit amet',
             'image_url' => 'Lorem ipsum dolor sit amet',
             'qte' => 1,
-            'created' => '2015-03-24 10:38:35',
-            'modified' => '2015-03-24 10:38:35',
+            'created' => '2015-03-24 10:48:57',
+            'modified' => '2015-03-24 10:48:57',
             'type_id' => 1,
             'format_id' => 1
         ],

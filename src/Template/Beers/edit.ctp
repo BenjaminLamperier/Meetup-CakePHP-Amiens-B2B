@@ -20,7 +20,7 @@
         <legend><?= __('Edit Beer') ?></legend>
         <?php
             echo $this->Form->input('name');
-            echo $this->Form->input('image_url');
+            echo $this->Form->input('image');
             echo $this->Form->input('qte');
             echo $this->Form->input('type_id', ['options' => $types]);
             echo $this->Form->input('format_id', ['options' => $formats]);

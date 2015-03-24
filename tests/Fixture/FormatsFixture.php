@@ -18,7 +18,7 @@ class FormatsFixture extends TestFixture
     // @codingStandardsIgnoreStart
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'names' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'name' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -36,7 +36,7 @@ class FormatsFixture extends TestFixture
     public $records = [
         [
             'id' => 1,
-            'names' => 'Lorem ipsum dolor sit amet'
+            'name' => 'Lorem ipsum dolor sit amet'
         ],
     ];
 }

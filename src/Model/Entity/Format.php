@@ -15,7 +15,7 @@ class Format extends Entity
      * @var array
      */
     protected $_accessible = [
-        'names' => true,
+        'name' => true,
         'beers' => true,
     ];
 }

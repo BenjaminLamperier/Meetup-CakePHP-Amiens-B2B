@@ -18,7 +18,7 @@ class CreateBeers extends AbstractMigration
             'limit' => 255,
             'null' => false,
         ]);
-        $table->addColumn('image_url', 'string', [
+        $table->addColumn('image', 'text', [
             'default' => null,
             'limit' => 255,
             'null' => false,
