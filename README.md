@@ -41,10 +41,10 @@ This is a simple Application, built with CakePHP, Bake and Migrations
 
 - updates in templates
 - Save image in base64 (/!\ Warning - Do not do this at home - It's dangerous, we are professional stunt  ... /!\)
-)
 
 ##Step 7 : CodeSniffer
 
 - php composer.phar require --dev "cakephp/cakephp-codesniffer=2.*"
 - vendor/bin/phpcs --config-set installed_paths vendor/cakephp/cakephp-codesniffer
 - vendor/bin/phpcs --standard=CakePHP /src
+
