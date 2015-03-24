@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "28bc3a247f54fa3e71e5ea8b21c54e2f",
+    "hash": "ef2254b87b67630e4f4e3b4655ece177",
     "packages": [
         {
             "name": "aura/installer-default",
@@ -127,16 +127,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "3.0.x-dev",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "a8b99e20f44643a2771fa45086f20f06aa7a77d7"
+                "reference": "09eb23891dc8134830f4e39e01a3a39f82935e41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/a8b99e20f44643a2771fa45086f20f06aa7a77d7",
-                "reference": "a8b99e20f44643a2771fa45086f20f06aa7a77d7",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/09eb23891dc8134830f4e39e01a3a39f82935e41",
+                "reference": "09eb23891dc8134830f4e39e01a3a39f82935e41",
                 "shasum": ""
             },
             "require": {
@@ -192,24 +192,24 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-03-18 08:34:25"
+            "time": "2015-03-22 16:42:46"
         },
         {
             "name": "cakephp/migrations",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/migrations.git",
-                "reference": "df467b4d5d50f47a9b90539c131b0995fcb05edd"
+                "reference": "3921e7f13f94c29f4ce1c7ddc4cf3745965b019a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/migrations/zipball/df467b4d5d50f47a9b90539c131b0995fcb05edd",
-                "reference": "df467b4d5d50f47a9b90539c131b0995fcb05edd",
+                "url": "https://api.github.com/repos/cakephp/migrations/zipball/3921e7f13f94c29f4ce1c7ddc4cf3745965b019a",
+                "reference": "3921e7f13f94c29f4ce1c7ddc4cf3745965b019a",
                 "shasum": ""
             },
             "require": {
-                "cakephp/cakephp": "3.0.x-dev",
+                "cakephp/cakephp": "~3.0",
                 "php": ">=5.4",
                 "robmorgan/phinx": "~0.4"
             },
@@ -242,7 +242,7 @@
                 "cakephp",
                 "migrations"
             ],
-            "time": "2015-03-12 09:25:25"
+            "time": "2015-03-22 18:07:33"
         },
         {
             "name": "cakephp/plugin-installer",
@@ -739,20 +739,20 @@
     "packages-dev": [
         {
             "name": "cakephp/bake",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/bake.git",
-                "reference": "9bebeff869c0c62d68dc3d75b6af63593dfbf0da"
+                "reference": "ad86dbce53c16a8c8af4ee30fdaa4ff41a924778"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/bake/zipball/9bebeff869c0c62d68dc3d75b6af63593dfbf0da",
-                "reference": "9bebeff869c0c62d68dc3d75b6af63593dfbf0da",
+                "url": "https://api.github.com/repos/cakephp/bake/zipball/ad86dbce53c16a8c8af4ee30fdaa4ff41a924778",
+                "reference": "ad86dbce53c16a8c8af4ee30fdaa4ff41a924778",
                 "shasum": ""
             },
             "require": {
-                "cakephp/cakephp": "3.0.x-dev",
+                "cakephp/cakephp": "~3.0",
                 "php": ">=5.4"
             },
             "require-dev": {
@@ -781,24 +781,24 @@
                 "bake",
                 "cakephp"
             ],
-            "time": "2015-03-17 14:09:32"
+            "time": "2015-03-22 18:09:12"
         },
         {
             "name": "cakephp/debug_kit",
-            "version": "3.0.x-dev",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/debug_kit.git",
-                "reference": "fd474ed54cb7873d690a5aa00dbafe47e25937b6"
+                "reference": "824c1610fe4a79f14f0a22b56de06241dfa49c37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/fd474ed54cb7873d690a5aa00dbafe47e25937b6",
-                "reference": "fd474ed54cb7873d690a5aa00dbafe47e25937b6",
+                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/824c1610fe4a79f14f0a22b56de06241dfa49c37",
+                "reference": "824c1610fe4a79f14f0a22b56de06241dfa49c37",
                 "shasum": ""
             },
             "require": {
-                "cakephp/cakephp": "3.0.*-dev"
+                "cakephp/cakephp": "~3.0"
             },
             "require-dev": {
                 "cakephp/cakephp-codesniffer": "dev-master",
@@ -841,7 +841,7 @@
                 "debug",
                 "kit"
             ],
-            "time": "2015-03-13 04:54:40"
+            "time": "2015-03-22 18:05:17"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -964,16 +964,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "ac05ef6f95bf8361549604b6031c115f92f39528"
+                "reference": "edbf162e4cf116102d95eb635608b7d310cc01c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/ac05ef6f95bf8361549604b6031c115f92f39528",
-                "reference": "ac05ef6f95bf8361549604b6031c115f92f39528",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/edbf162e4cf116102d95eb635608b7d310cc01c6",
+                "reference": "edbf162e4cf116102d95eb635608b7d310cc01c6",
                 "shasum": ""
             },
             "require": {
@@ -983,7 +983,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -1005,7 +1005,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2015-01-18 11:29:59"
+            "time": "2015-03-22 16:17:25"
         },
         {
             "name": "psy/psysh",
@@ -1082,11 +1082,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "cakephp/cakephp": 20,
-        "cakephp/migrations": 20,
-        "psy/psysh": 0,
-        "cakephp/debug_kit": 20,
-        "cakephp/bake": 20
+        "psy/psysh": 0
     },
     "prefer-stable": true,
     "prefer-lowest": false,

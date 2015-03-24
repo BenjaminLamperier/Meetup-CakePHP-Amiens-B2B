@@ -1,14 +1,14 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\BeersTable;
+use App\Model\Table\TypesTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\BeersTable Test Case
+ * App\Model\Table\TypesTable Test Case
  */
-class BeersTableTest extends TestCase
+class TypesTableTest extends TestCase
 {
 
     /**
@@ -17,9 +17,8 @@ class BeersTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'Beers' => 'app.beers',
         'Types' => 'app.types',
-        'Formats' => 'app.formats'
+        'Beers' => 'app.beers'
     ];
 
     /**
@@ -30,8 +29,8 @@ class BeersTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Beers') ? [] : ['className' => 'App\Model\Table\BeersTable'];
-        $this->Beers = TableRegistry::get('Beers', $config);
+        $config = TableRegistry::exists('Types') ? [] : ['className' => 'App\Model\Table\TypesTable'];
+        $this->Types = TableRegistry::get('Types', $config);
     }
 
     /**
@@ -41,7 +40,7 @@ class BeersTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Beers);
+        unset($this->Types);
 
         parent::tearDown();
     }
@@ -62,16 +61,6 @@ class BeersTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test buildRules method
-     *
-     * @return void
-     */
-    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

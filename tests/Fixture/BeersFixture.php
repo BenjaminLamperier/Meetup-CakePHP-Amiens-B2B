@@ -23,6 +23,8 @@ class BeersFixture extends TestFixture
         'qte' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        'type_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'format_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -43,8 +45,10 @@ class BeersFixture extends TestFixture
             'name' => 'Lorem ipsum dolor sit amet',
             'image_url' => 'Lorem ipsum dolor sit amet',
             'qte' => 1,
-            'created' => '2015-03-18 17:56:01',
-            'modified' => '2015-03-18 17:56:01'
+            'created' => '2015-03-24 10:38:35',
+            'modified' => '2015-03-24 10:38:35',
+            'type_id' => 1,
+            'format_id' => 1
         ],
     ];
 }

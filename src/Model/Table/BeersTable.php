@@ -25,6 +25,12 @@ class BeersTable extends Table
         $this->displayField('name');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');
+        $this->belongsTo('Types', [
+            'foreignKey' => 'type_id'
+        ]);
+        $this->belongsTo('Formats', [
+            'foreignKey' => 'format_id'
+        ]);
     }
 
     /**
@@ -44,8 +50,28 @@ class BeersTable extends Table
             ->notEmpty('image_url')
             ->add('qte', 'valid', ['rule' => 'numeric'])
             ->requirePresence('qte', 'create')
-            ->notEmpty('qte');
+            ->notEmpty('qte')
+            ->add('type_id', 'valid', ['rule' => 'numeric'])
+            ->requirePresence('type_id', 'create')
+            ->notEmpty('type_id')
+            ->add('format_id', 'valid', ['rule' => 'numeric'])
+            ->requirePresence('format_id', 'create')
+            ->notEmpty('format_id');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['type_id'], 'Types'));
+        $rules->add($rules->existsIn(['format_id'], 'Formats'));
+        return $rules;
     }
 }

@@ -18,6 +18,9 @@ class BeersController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Types', 'Formats']
+        ];
         $this->set('beers', $this->paginate($this->Beers));
         $this->set('_serialize', ['beers']);
     }
@@ -32,7 +35,7 @@ class BeersController extends AppController
     public function view($id = null)
     {
         $beer = $this->Beers->get($id, [
-            'contain' => []
+            'contain' => ['Types', 'Formats']
         ]);
         $this->set('beer', $beer);
         $this->set('_serialize', ['beer']);
@@ -55,7 +58,9 @@ class BeersController extends AppController
                 $this->Flash->error('The beer could not be saved. Please, try again.');
             }
         }
-        $this->set(compact('beer'));
+        $types = $this->Beers->Types->find('list', ['limit' => 200]);
+        $formats = $this->Beers->Formats->find('list', ['limit' => 200]);
+        $this->set(compact('beer', 'types', 'formats'));
         $this->set('_serialize', ['beer']);
     }
 
@@ -80,7 +85,9 @@ class BeersController extends AppController
                 $this->Flash->error('The beer could not be saved. Please, try again.');
             }
         }
-        $this->set(compact('beer'));
+        $types = $this->Beers->Types->find('list', ['limit' => 200]);
+        $formats = $this->Beers->Formats->find('list', ['limit' => 200]);
+        $this->set(compact('beer', 'types', 'formats'));
         $this->set('_serialize', ['beer']);
     }
 
