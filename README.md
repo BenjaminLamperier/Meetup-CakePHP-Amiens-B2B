@@ -48,3 +48,6 @@ This is a simple Application, built with CakePHP, Bake and Migrations
 - vendor/bin/phpcs --config-set installed_paths vendor/cakephp/cakephp-codesniffer
 - vendor/bin/phpcs --standard=CakePHP /src
 
+##Step 8 : One more thing
+
+- do you want an API ? To late ... it's done !

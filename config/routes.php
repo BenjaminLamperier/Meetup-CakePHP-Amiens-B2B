@@ -73,6 +73,14 @@ Router::scope('/', function ($routes) {
     $routes->fallbacks('InflectedRoute');
 });
 
+//Make the app (h)API
+Router::scope('/', function ($routes) {
+    $routes->extensions(['xml', 'json']);
+    $routes->resources('beers', ['only'=>['index', 'view']]);
+    $routes->resources('types');
+    $routes->resources('formats');
+});
+
 /**
  * Load all plugin routes.  See the Plugin documentation on
  * how to customize the loading of plugin routes.

@@ -10,6 +10,15 @@ use App\Controller\AppController;
  */
 class BeersController extends AppController
 {
+    /**
+     * [initialize description]
+     * @return [type] [description]
+     */
+    public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+    }
 
     /**
      * Index method
