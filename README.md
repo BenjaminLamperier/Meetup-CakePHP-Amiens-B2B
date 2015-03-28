@@ -6,7 +6,7 @@ Cachier des charges :
  - Administration des types
  - Administration des formats
 
-Contraintes :
+Contrainte :
   - Vous avez 15 min !
 
 ##Step 1 : Installer CakePHP 3
