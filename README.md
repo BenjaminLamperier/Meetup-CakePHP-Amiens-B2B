@@ -13,7 +13,7 @@ Contrainte :
 
 - php composer.phar create-project --prefer-dist cakephp/app [app_name]
 
-##Step 2 : Créer la table beers avec le plugin Migration
+##Step 2 : Créer la table beers avec le plugin Migrations
 
 - bin/cake bake migration CreateBeers name:string image:text qte:integer created:datetime modified:datetime
 
