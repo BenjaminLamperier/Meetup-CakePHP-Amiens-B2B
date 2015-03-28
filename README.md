@@ -19,7 +19,7 @@ Contrainte :
 
 - bin/cake Migrations migrate
 
-##Step 3 : Créer le CRUD pour le table beers
+##Step 3 : Créer le CRUD pour la table beers
 
 - bin/cake bake all beers
 
