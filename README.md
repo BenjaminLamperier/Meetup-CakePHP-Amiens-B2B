@@ -43,7 +43,7 @@ Contrainte :
 
 - check at localhost/[app_name]/beers
 
-##Step 6 : On personne quelques trucs
+##Step 6 : On personnalise quelques trucs
 
 - quelques modifs dans les templates
 - pas d'upload d'image (trop long dans le temps imparti) alors on ajoute les images en base64 (/!\ Warning - Do not do this at home - It's dangerous, we are professional stunt  ... /!\)
