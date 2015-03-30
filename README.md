@@ -1,6 +1,8 @@
 # Meetup-CakePHP-Amiens-B2B
 Demo Project -CakePHP - Meetup Amiens
 
+[Voir les slides](http://fr.slideshare.net/BenjaminLamprier/meetup-cakephp-amiens-25-mars-2015)
+
 Cachier des charges : 
  - Liste des bières
  - Administration des types
